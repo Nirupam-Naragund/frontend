@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 import {useRouter} from "next/navigation";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+import toast, { Toaster } from 'react-hot-toast';
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/utils/cn";
@@ -24,6 +24,8 @@ export default function SignupFormDemo() {
     const [loading, setLoading] = React.useState(false);
     const [signupSuccess, setSignupSuccess] = React.useState(false);
 
+    
+
     const onSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         try {
@@ -35,7 +37,7 @@ export default function SignupFormDemo() {
       // Set the cookie with a key-value pair
       Cookies.set('randomCookie', randomCookie);
             toast.success("Login success");
-            router.push("/");
+            router.push("/challenges");
         } catch (error:any) {
             console.log("Login failed", error.message);
             toast.error(error.message);
@@ -45,13 +47,13 @@ export default function SignupFormDemo() {
     }
 
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="max-w-xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+      <Toaster />
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-        Welcome to Aceternity
+        Welcome to Code Sprint
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Login to aceternity if you can because we don&apos;t have a login flow
-        yet
+        Login with your credentials
       </p>
 
       <form className="my-8" onSubmit={onSignIn}>
@@ -87,7 +89,7 @@ export default function SignupFormDemo() {
           className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
-          Sign up &rarr;
+          Login &rarr;
           <BottomGradient />
         </button>
 
