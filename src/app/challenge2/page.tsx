@@ -7,6 +7,7 @@ import { cn } from "@/utils/cn";
 import axios from "axios";
 import toast, { Toaster } from 'react-hot-toast';
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import Link from "next/link";
 
 
 export default function Questions1() {
@@ -187,6 +188,7 @@ Yet, with great power came great responsibility. Dr. Synapse wrestled with the e
   Submit &rarr;
   
 </button>
+<p className="mt-6"><Link href="/challenge3">Click here for Challenge 3</Link></p>
     </div>
 </TracingBeam>
     
