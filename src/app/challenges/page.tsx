@@ -1,29 +1,33 @@
-import { EvervaultCardDemo } from "@/components/EveraultCard";
 
+"use client";
+import React, { useState, useEffect } from "react";
+import { EvervaultCardDemo } from "@/components/EveraultCard";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { EvervaultCard } from "@/components/ui/evervault-card";
 import { GridBackgroundDemo } from "@/components/Challenges";
 import Image from "next/image";
 
   export default function Home() {
+ 
+    
     return (
         <>
+        <BackgroundBeams />
     <div style={{ display: "grid", placeItems: "center" }}>
-  <h1 className="text-align py-6 " style={{ fontSize: "2rem" }}>The Challenges</h1>
+  <h1 className="text-align mt-6 " style={{ fontSize: "1.5rem" }}><i>The Challenges</i></h1>
 </div>
-        <div className="h-[50rem] w-full dark:bg-black bg-zinc-950  dark:bg-grid-white/[0.2] bg-grid-zinc-300/[0.2] relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center">
             
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-zinc-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="grid grid-cols-3 gap-12">
             
-        <div className="bg-white "> 
-      <div className="bg-zinc-950 flex  items-center justify-center min-h-screen">
+        <div className=" "> 
+      <div className=" flex  items-center justify-center min-h-screen">
         <div className="border border-zinc-500 rounded-md shadow-lg p-3 max-w-sm relative"> {/* Added relative positioning */}
           <EvervaultCard text="Challenge #1" />
           <h2 className="text-white mt-4 text-sm font-light text-center">
-            Hover over this card to reveal an awesome effect. Running out of copy
-            here.
+            Hover over this card to reveal an awesome effect.
           </h2>
           <div className="flex justify-center mt-4">
             <a href="/challenge1">
@@ -56,13 +60,12 @@ import Image from "next/image";
         </div>
       </div>
         </div>
-        <div className="bg-white "> 
-      <div className="bg-zinc-950 flex  items-center justify-center min-h-screen">
+        <div className=" "> 
+      <div className=" flex  items-center justify-center min-h-screen">
         <div className="border border-zinc-500 rounded-md shadow-lg p-3 max-w-sm relative"> {/* Added relative positioning */}
-          <EvervaultCard text="Challenge #1" />
+          <EvervaultCard text="Challenge #2" />
           <h2 className="text-white mt-4 text-sm font-light text-center">
-            Hover over this card to reveal an awesome effect. Running out of copy
-            here.
+            Hover over this card to reveal an awesome effect. 
           </h2>
           <div className="flex justify-center mt-4">
             <a href="/challenge2">
@@ -96,13 +99,12 @@ import Image from "next/image";
       </div>
         </div>
 
-         <div className="bg-white "> 
-      <div className="bg-zinc-950 flex  items-center justify-center min-h-screen">
+         <div className=" "> 
+      <div className="flex  items-center justify-center min-h-screen">
         <div className="border border-zinc-500 rounded-md shadow-lg p-3 max-w-sm relative"> {/* Added relative positioning */}
-          <EvervaultCard text="Challenge #1" />
+          <EvervaultCard text="Challenge #3" />
           <h2 className="text-white mt-4 text-sm font-light text-center">
-            Hover over this card to reveal an awesome effect. Running out of copy
-            here.
+            Hover over this card to reveal an awesome effect. 
           </h2>
           <div className="flex justify-center mt-4">
             <a href="/challenge3">
