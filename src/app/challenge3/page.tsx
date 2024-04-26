@@ -58,15 +58,6 @@ const Challenge3 = () => {
     }
   }
 
-  // const onClickButton = async () => {
-  //   const buttonElem = document.querySelector<HTMLInputElement>('#wrapper button');
-  //   const inputElem = document.querySelector<HTMLInputElement>('#wrapper input');
-  //   buttonElem.addEventListener('click', () => {
-  //     const oldText = inputElem.value;
-  //     return inputElem.value = oldText === "ON" ? "OFF" : "ON";
-  //   });
-  // }
-
   return (
     <TracingBeam className='px-6'>
     <Toaster/>
