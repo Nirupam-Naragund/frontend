@@ -19,7 +19,7 @@ export default function Questions1() {
     const challengeTwo = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
         const lowerCase1=input1.toLowerCase()
-        console.log(lowerCase1);
+       
         
       const lowerCase2=input2.toLowerCase();
       const lowerCase3=input3.toLowerCase();
