@@ -1,5 +1,6 @@
 
 "use client";
+import Navbar from "@/components/Navbar/page";
 import React from "react";
 
 export default function GridBackgroundDemo() {
