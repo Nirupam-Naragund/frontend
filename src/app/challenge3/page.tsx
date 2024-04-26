@@ -32,14 +32,14 @@ const Challenge3 = () => {
       }
       const decodedToken = JSON.parse(atob(token.split(".")[1]));
       const storedUserId = decodedToken.userId.toString();
-      console.log(storedUserId);
+      // console.log(storedUserId);
       const userId=storedUserId
 
       const response=await axios.post("api/users/getUpdateId",{userId,questionId});
-      console.log(response.data);
+      // console.log(response.data);
       const updateId=response.data;
       const uId=updateId._id
-      console.log(uId);
+      // console.log(uId);
 
       if(inputValue1 === "CodeSprint2.0"){
        
@@ -57,6 +57,15 @@ const Challenge3 = () => {
       console.error('Error incrementing flag:', error);
     }
   }
+
+  // const onClickButton = async () => {
+  //   const buttonElem = document.querySelector<HTMLInputElement>('#wrapper button');
+  //   const inputElem = document.querySelector<HTMLInputElement>('#wrapper input');
+  //   buttonElem.addEventListener('click', () => {
+  //     const oldText = inputElem.value;
+  //     return inputElem.value = oldText === "ON" ? "OFF" : "ON";
+  //   });
+  // }
 
   return (
     <TracingBeam className='px-6'>
