@@ -56,21 +56,21 @@ export default function Questions1() {
       }
       const decodedToken = JSON.parse(atob(token.split(".")[1]));
       const storedUserId = decodedToken.userId.toString();
-      console.log(storedUserId);
+      // console.log(storedUserId);
       const userId=storedUserId
 
       const response=await axios.post("api/users/getUpdateId",{userId,questionId});
-      console.log(response.data);
+      // console.log(response.data);
       const updateId=response.data;
       const uId=updateId._id
-      console.log(uId);
+      // console.log(uId);
 
       if (input1 == 'hasSubscription?' && input2 == '<p>Welcome back! Your subscription is active.</p>' && input3 == '<p>Please subscribe to access premium features.</p>') {
         try {
    
         
           const response = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
-          console.log(response.data);
+          // console.log(response.data);
          } catch (error) {
           console.log(error);
           
@@ -112,13 +112,13 @@ export default function Questions1() {
       }
       const decodedToken = JSON.parse(atob(token.split(".")[1]));
       const storedUserId = decodedToken.userId.toString();
-      console.log(storedUserId);
+      // console.log(storedUserId);
 
       const response=await axios.post("api/users/getUpdateId",{userId,questionId});
-      console.log(response.data);
+      // console.log(response.data);
       const updateId=response.data;
       const uId=updateId._id
-      console.log(uId);
+      // console.log(uId);
 
       
 
@@ -134,9 +134,9 @@ export default function Questions1() {
    
         
         const response = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
-        console.log(response.data);
+        // console.log(response.data);
        } catch (error) {
-        console.log(error);
+        // console.log(error);
         
        }
 
@@ -170,12 +170,12 @@ export default function Questions1() {
       const questionId = "q2"; // Set questionId here
       const value = "Question 2 complete";
       const response=await axios.post("api/users/getUpdateId",{userId,questionId});
-      console.log(response.data);
+      // console.log(response.data);
       const updateId=response.data;
       const uId=updateId._id
-      console.log(uId); // Set value here
+      // console.log(uId); // Set value here
       const randomCookieValue =document.cookie.split('; ').find(row => row.startsWith('randomCookie='))?.split('=')[1];
-      console.log(randomCookieValue);
+      // console.log(randomCookieValue);
       
       if (!randomCookieValue) {
         console.error("Cookie not found.");
@@ -190,9 +190,9 @@ export default function Questions1() {
    
         
         const response = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
-        console.log(response.data);
+        // console.log(response.data);
        } catch (error) {
-        console.log(error);
+        // console.log(error);
         
        }
               toast.success("Question 2 answered correctly");

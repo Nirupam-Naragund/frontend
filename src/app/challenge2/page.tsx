@@ -25,7 +25,7 @@ export default function Questions1() {
       const lowerCase3=input3.toLowerCase();
         try {
           // const questionIds = ["q4", "q5", "q6"]; 
-          const questionIds = ["q4", "q5", "q6"];// Array of question IDs
+          const questionIds = ["q4"];// Array of question IDs
           // const values = ["Question 4 complete", "Question 5 complete", "Question 6 complete"];
           const values = ["Question 4 complete"];
           
@@ -36,7 +36,7 @@ export default function Questions1() {
           }
           const decodedToken = JSON.parse(atob(token.split(".")[1]));
           const storedUserId = decodedToken.userId.toString();
-          console.log(storedUserId);
+          
           const userId=storedUserId
     
           // const response=await axios.post("api/users/getUpdateId",{userId,questionId});
@@ -47,16 +47,16 @@ export default function Questions1() {
           if (lowerCase1 == 'algorithms' && lowerCase2 == 'consciousness' && lowerCase3 == 'creativity') {
             const responses = await Promise.all(questionIds.map(async (questionId, index) => {
               const response = await axios.post("api/users/getUpdateId", { userId, questionId });
-              console.log(response.data);
+              
               const updateId = response.data._id;
-              console.log(updateId);
+          
       
               if (lowerCase1 === 'algorithms' && lowerCase2 === 'consciousness' && lowerCase3 === 'creativity') {
                 try {
                   const response = await axios.post('/api/users/updateQuestion', { userId, uId: updateId, value: values[index] });
-                  console.log(response.data);
+                  
                 } catch (error) {
-                  console.log(error);
+                  
                 }
               }
             }));
@@ -75,7 +75,7 @@ export default function Questions1() {
             
             const token = localStorage.getItem("token");
             if (!token) {
-              console.error("Token not found in local storage.");
+              toast.error("Token not found in local storage.");
               return;
             }
             const decodedToken = JSON.parse(atob(token.split(".")[1]));
