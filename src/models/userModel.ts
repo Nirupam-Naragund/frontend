@@ -18,7 +18,7 @@ interface UserInterface extends Document {
     verifyTokenExpiry?: Date;
 }
 
-const QUESTION_IDS: string[] = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
+const QUESTION_IDS: string[] = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
 
 const userSchema: Schema = new Schema<UserInterface>({
     username: {
@@ -43,10 +43,10 @@ const userSchema: Schema = new Schema<UserInterface>({
         type: Boolean,
         default: false,
     },
-    flag: {
-        type: Number,
-        default: 0,
-    },
+    // flag: {
+    //     type: Number,
+    //     default: 0,
+    // },
     date: {
         type: Date,
         default: Date.now,
@@ -56,11 +56,11 @@ const userSchema: Schema = new Schema<UserInterface>({
             questionId: { type: String, enum: QUESTION_IDS },
             isMarkedTrue: { type: String, default: "" } // Change type to string
         }],
-    },
-    forgotPasswordToken: String,
-    forgotPasswordTokenExpiry: Date,
-    verifyToken: String,
-    verifyTokenExpiry: Date,
+    }
+    // forgotPasswordToken: String,
+    // forgotPasswordTokenExpiry: Date,
+    // verifyToken: String,
+    // verifyTokenExpiry: Date,
 });
 
 userSchema.pre<UserInterface>("save", function(next) {
