@@ -55,7 +55,7 @@ connect();
 //     }
 // }
 
-const QUESTION_IDS: string[] = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
+const QUESTION_IDS: string[] = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
 
 export async function POST(request: NextRequest) {
     try {
