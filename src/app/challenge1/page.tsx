@@ -152,9 +152,9 @@ export default function Questions1() {
         setUserId("");
       }
     } catch (error:any) {
-      console.log("failed", error.message);
+      // console.log("failed", error.message);
       
-      toast.error(error.message);
+      toast.error("User ID did not match");
   }
   };
 
