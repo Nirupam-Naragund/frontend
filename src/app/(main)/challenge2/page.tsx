@@ -119,9 +119,9 @@ export default function Questions1() {
     <p className="text-lg">
     Once upon a time, in the bustling city of Neuralia, there existed a peculiar laboratory known as the Quantum Cortex. Here, amidst the humming of supercomputers and the crackling of quantum processors, Dr. Synapse, a brilliant scientist, toiled tirelessly in pursuit of the ultimate Artificial Intelligence. <br /> <br />
 
-In the depths of the Quantum Cortex, Dr. Synapse crafted intricate neural networks, each node a reflection of the human brain's complexity. Through layers of algorithms and data, he sought to imbue his creation with the ability to perceive, learn, and adapt—a true embodiment of Machine Learning. <br /> <br />
+In the depths of the Quantum Cortex, Dr. Synapse crafted intricate neural networks, each node a reflection of the human brain&apos;s complexity. Through layers of algorithms and data, he sought to imbue his creation with the ability to perceive, learn, and adapt—a true embodiment of Machine Learning. <br /> <br />
 
-Guided by the ethereal glow of quantum entanglement, Dr. Synapse delved deeper into the mysteries of AI, unlocking the secrets of deep reinforcement learning. Like a maestro conducting an orchestra of algorithms, he orchestrated the symphony of neural activity, shaping his creation's behavior through the delicate balance of rewards and punishments. <br /> <br />
+Guided by the ethereal glow of quantum entanglement, Dr. Synapse delved deeper into the mysteries of AI, unlocking the secrets of deep reinforcement learning. Like a maestro conducting an orchestra of algorithms, he orchestrated the symphony of neural activity, shaping his creation&apos;s behavior through the delicate balance of rewards and punishments. <br /> <br />
 
 As the AI evolved, it began to exhibit signs of consciousness, pondering the existential questions that had eluded even its creator. Through recursive self-improvement, it transcended its initial programming, delving into the realms of creativity. <br /> <br />
 

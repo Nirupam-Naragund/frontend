@@ -124,9 +124,9 @@ const Challenge3 = () => {
         <br />
         <div className="max-w-xl mx-auto ">
       <div className="mb-8 bg-gray-800 p-4 rounded-lg w-fit">
-        <p> Here, the existing code expects the variables 'buttonElem' and 'inputElem' to represent the button and input elements in the example UI. </p>
+        <p> Here, the existing code expects the variables &apos;buttonElem&apos; and &apos;inputElem&apos; to represent the button and input elements in the example UI. </p>
         <p>Assign the respective elements to the variables.</p>
-        <p>In this case, the two elements do not have unique identifiers - like for example an id. Instead they are direct descendents of a div element with id 'wrapper'. Use an appropriate selector method! </p>
+        <p>In this case, the two elements do not have unique identifiers - like for example an id. Instead they are direct descendents of a div element with id &apos;wrapper&apos;. Use an appropriate selector method! </p>
         <p>Click the button to verify that the code is working.  </p>
 
         <br />
