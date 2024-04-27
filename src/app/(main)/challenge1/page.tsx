@@ -384,7 +384,7 @@ Explanation:<br /><br />
 1)We have a Greeting component that utilizes the useState hook to manage the state of isLoggedIn representing the users login status <br /><br />
 2)The toggleLogin function is responsible for toggling the value of isLoggedIn between true and false each time the button is clicked. <br /><br />
 3)Inside the return statement, we use a ternary operator to conditionally render different content based on the value of isLoggedIn. If isLoggedIn is true, we display the welcome message; otherwise, we display the login prompt. <br /><br />
-4)Similarly the text on the button is also conditionally rendered based on the value of isLoggedIn If isLoggedIn is true, the button text is Logout  otherwise it's Login <br /><br />
+4)Similarly the text on the button is also conditionally rendered based on the value of isLoggedIn If isLoggedIn is true the button text is Logout  otherwise it's Login <br /><br />
 This example illustrates how conditional rendering in React allows developers to create dynamic user interfaces that respond to user interactions, providing a more personalized experience for users.
 
           </p>
