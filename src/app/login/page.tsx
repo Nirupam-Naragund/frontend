@@ -91,7 +91,7 @@ export default function SignupFormDemo() {
       
       </form>
 
-      <h1>Don't have account? <Link href="/signup">SignIn here</Link></h1>
+      <h1>Dont have account? <Link href="/signup">SignIn here</Link></h1>
     </div>
   );
 }
