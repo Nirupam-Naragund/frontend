@@ -44,7 +44,7 @@ const Challenge3 = () => {
       if(inputValue1 === "CodeSprint2.0"){
        
         const response = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
-        console.log(response.data);
+        // console.log(response.data);
         toast.success("Question 5 is correct")
         console.log('your answer is correct : ', inputValue1)
         
