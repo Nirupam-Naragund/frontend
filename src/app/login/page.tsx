@@ -39,7 +39,7 @@ export default function SignupFormDemo() {
             toast.success("Login success");
             router.push("/challenges");
         } catch (error:any) {
-            console.log("Login failed", error.message);
+            console.log("Login failed");
             toast.error(error.message);
         } finally{
         setLoading(false);

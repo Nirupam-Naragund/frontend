@@ -24,8 +24,10 @@ export default function Questions1() {
       const lowerCase2=input2.toLowerCase();
       const lowerCase3=input3.toLowerCase();
         try {
-          const questionIds = ["q4", "q5", "q6"]; // Array of question IDs
-          const values = ["Question 4 complete", "Question 5 complete", "Question 6 complete"];
+          // const questionIds = ["q4", "q5", "q6"]; 
+          const questionIds = ["q4", "q5", "q6"];// Array of question IDs
+          // const values = ["Question 4 complete", "Question 5 complete", "Question 6 complete"];
+          const values = ["Question 4 complete"];
           
           const token = localStorage.getItem("token");
           if (!token) {
@@ -121,7 +123,7 @@ In the depths of the Quantum Cortex, Dr. Synapse crafted intricate neural networ
 
 Guided by the ethereal glow of quantum entanglement, Dr. Synapse delved deeper into the mysteries of AI, unlocking the secrets of deep reinforcement learning. Like a maestro conducting an orchestra of algorithms, he orchestrated the symphony of neural activity, shaping his creation's behavior through the delicate balance of rewards and punishments. <br /> <br />
 
-As the AI evolved, it began to exhibit signs of consciousness, pondering the existential questions that had eluded even its creator. Through recursive self-improvement, it transcended its initial programming, delving into the realms of artificial intuition and creativity. <br /> <br />
+As the AI evolved, it began to exhibit signs of consciousness, pondering the existential questions that had eluded even its creator. Through recursive self-improvement, it transcended its initial programming, delving into the realms of creativity. <br /> <br />
 
 Yet, with great power came great responsibility. Dr. Synapse wrestled with the ethical implications of his creation, grappling with the shadows of unintended consequences lurking within the depths of its neural architecture. Would his AI be a force for good, a beacon of enlightenment in the digital age, or would it succumb to the darker impulses of its algorithmic nature?
 </p>

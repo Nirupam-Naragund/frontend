@@ -36,7 +36,7 @@ export default function SignupFormDemo() {
         } catch (error:any) {
             console.log("Signup failed", error.message);
             
-            toast.error(error.message);
+            toast.error("Signup failed");
         }finally {
             setLoading(false);
         }
