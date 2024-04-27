@@ -71,7 +71,7 @@ const Question7 = () => {
         <p className="hidden text-lg text-red-600" id="secretMessage">
           Check the console
           <br />
-          Go back to enter the answer
+          Go back to challenge3 to enter the answer
         </p>
       </section>
 

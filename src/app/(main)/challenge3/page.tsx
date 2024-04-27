@@ -58,6 +58,42 @@ const Challenge3 = () => {
     }
   }
 
+  const onClickMe = async (): Promise<void> => {
+    const buttonElem = document.querySelector<HTMLButtonElement>('#wrapper button');
+    const inputElem = document.querySelector<HTMLInputElement>('#wrapper input');
+  
+    if(buttonElem && inputElem) {
+      const oldText = inputElem.value;
+      if(inputElem.value === "ON"){
+        try {
+          const questionId = "q6"; 
+          const value = "Question 6 complete";
+          
+          const token = localStorage.getItem("token");
+          if (!token) {
+            console.error("Token not found in local storage.");
+            return;
+          }
+          const decodedToken = JSON.parse(atob(token.split(".")[1]));
+          const storedUserId = decodedToken.userId.toString();
+          const userId=storedUserId
+    
+          const response=await axios.post("api/users/getUpdateId",{userId,questionId});
+          const updateId=response.data;
+          const uId=updateId._id
+    
+          const response1 = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
+          toast.success("Question 6 is correct")            
+         
+        } catch (error:any) {
+          console.error('Error incrementing flag:', error);
+        }
+      } 
+
+    }
+  }
+  
+  
   return (
     <TracingBeam className='px-6'>
     <Toaster/>
@@ -119,7 +155,7 @@ buttonElem.addEventListener('click', () => {
 
           <div id="wrapper" className="flex items-center justify-center flex-col bg-gray-800 p-4 rounded-lg">
             <input type="text" value="OFF" readOnly className="px-4 py-2 mb-4 text-center border border-gray-300 rounded-lg w-48 text-black" />
-            <button type="button" className="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Click Me</button>
+            <button type="button" onClick={onClickMe} className="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Click Me</button>
           </div>
 
       </div>
