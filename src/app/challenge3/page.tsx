@@ -22,8 +22,8 @@ const Challenge3 = () => {
   const onSubmit = async () => {
     
     try {
-      const questionId = "q7"; 
-      const value = "Question 7 complete";
+      const questionId = "q5"; 
+      const value = "Question 5 complete";
       
       const token = localStorage.getItem("token");
       if (!token) {
@@ -45,7 +45,7 @@ const Challenge3 = () => {
        
         const response = await axios.post('/api/users/updateQuestion', { userId, uId ,value });
         console.log(response.data);
-        toast.success("Question 7 is correct")
+        toast.success("Question 5 is correct")
         console.log('your answer is correct : ', inputValue1)
         
       }

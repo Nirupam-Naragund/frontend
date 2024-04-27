@@ -66,7 +66,7 @@ const Question7 = () => {
           Use the appropriate <code>display</code> value based on the desired layout behavior of the element. For example, use <code>display: block;</code> for elements that should start on a new line and take up the full width available.
         </p>
         <p className="bg-gray-200 p-4 rounded-md  text-black">
-          You can inspect elements and change their <code>display</code> property using browser developer tools. Right-click on the element, select "Inspect" to open the developer tools, and navigate to the "Styles" panel. Here, you can locate the <code>display</code> property and modify its value to see the immediate effect on the layout. Change the display property of a hidden element
+          You can inspect elements and change their <code>display</code> property using browser developer tools. Right-click on the element, select "Inspect" to open the developer tools, and navigate to the "Styles" panel. Here, you can locate the <code>display</code> property and modify its value to see the immediate effect on the layout.<span className='text-red-600 font-bold'> Change the display property of a hidden element</span> 
         </p>
         <p className="hidden text-lg text-red-600" id="secretMessage">
           Check the console
