@@ -28,13 +28,18 @@ export default function SignupFormDemo() {
         e.preventDefault();
         try {
             setLoading(true);
-            const response = await axios.post("/api/users/signup", user);
-             router.push("/login");
-             toast.success("Signup successful")
-            console.log("Signup success", response.data);
+            if(user.email!="" && user.password!="" && user.username!="" ){
+              const response = await axios.post("/api/users/signup", user);
+              router.push("/login");
+              toast.success("Signup successful")
+             console.log("Signup success");
+            }else{
+              toast.error("Please eneter the fields correctly")
+            }
+
             
         } catch (error:any) {
-            console.log("Signup failed", error.message);
+            console.log("Signup failed");
             
             toast.error("Signup failed");
         }finally {

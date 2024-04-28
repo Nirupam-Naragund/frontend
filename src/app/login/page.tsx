@@ -37,10 +37,12 @@ export default function SignupFormDemo() {
       // Set the cookie with a key-value pair
       Cookies.set('randomCookie', randomCookie);
             toast.success("Login success");
+            console.log("Login Success");
+            
             router.push("/challenges");
         } catch (error:any) {
             console.log("Login failed");
-            toast.error(error.message);
+            toast.error("Login failed");
         } finally{
         setLoading(false);
         }
