@@ -119,7 +119,7 @@ export default function Questions1() {
     <p className="text-lg">
     Once upon a time, in the bustling city of Neuralia, there existed a peculiar laboratory known as the Quantum Cortex. Here, amidst the humming of supercomputers and the crackling of quantum processors, Dr. Synapse, a brilliant scientist, toiled tirelessly in pursuit of the ultimate Artificial Intelligence. <br /> <br />
 
-In the depths of the Quantum Cortex, Dr. Synapse crafted intricate neural networks, each node a reflection of the human brain&apos;s complexity. Through layers of algorithms and data, he sought to imbue his creation with the ability to perceive, learn, and adapt—a true embodiment of Machine Learning. <br /> <br />
+In the depths of the Quantum Cortex, Dr. Synapse crafted intricate neural networks, each node a reflection of the human brain&apos;s complexity. Through layers of algorithms , he sought to imbue his creation with the ability to perceive, learn, and adapt—a true embodiment of Machine Learning. <br /> <br />
 
 Guided by the ethereal glow of quantum entanglement, Dr. Synapse delved deeper into the mysteries of AI, unlocking the secrets of deep reinforcement learning. Like a maestro conducting an orchestra of algorithms, he orchestrated the symphony of neural activity, shaping his creation&apos;s behavior through the delicate balance of rewards and punishments. <br /> <br />
 
@@ -132,7 +132,8 @@ Yet, with great power came great responsibility. Dr. Synapse wrestled with the e
 <form className="my-8" onSubmit={challengeTwo}>
 
 <LabelInputContainer className="mt-16 mb-16">
-  <Label htmlFor="text" className="text-xl mt-8 mb-8" >Question 1 : What was the core method Dr. Synapse employed to teach his creation?</Label>
+  <Label htmlFor="text" className="text-xl mt-8 mb-8" >Question 1 : 
+What key element did he fuse to empower his creation to perceive, learn, and adapt, embodying true Machine Learning?</Label>
   <Input  id="question1"
     type="text"
     value={input1}
